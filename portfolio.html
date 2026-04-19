@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Услуги — VALERI STUDIO</title>
+  <meta name="description" content="Услуги студии: веб-дизайн, разработка, AI-агенты, 3D визуализация." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════ -->
+
+  <header class="site-header" role="banner">
+    <a href="index.html" class="logo" aria-label="VALERI STUDIO — home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      VALERI STUDIO
+    </a>
+
+```
+<nav role="navigation" aria-label="Основная навигация">
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="portfolio.html">Услуги</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+</nav>
+
+<button class="menu-toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Открыть меню">
+  <span></span><span></span><span></span>
+</button>
+```
+
+  </header>
+
+  <main>
+
+```
+<!-- ═══════════════════════════════════════
+     PAGE HERO
+═══════════════════════════════════════ -->
+<section class="page-hero" aria-labelledby="page-hero-heading">
+  <div class="page-hero-inner">
+    <div>
+      <p class="label">Услуги и портфолио</p>
+      <h1 class="page-title" id="page-hero-heading">
+        WHAT<br />WE DO
+      </h1>
+    </div>
+    <p class="page-hero-meta">
+      6 направлений<br />
+      от ₽35 000 / €1 000
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     THREE.JS — 3D INTERACTIVE MODEL
+═══════════════════════════════════════ -->
+<section class="three-section" aria-labelledby="three-heading">
+  <div class="three-inner">
+
+    <!-- Canvas -->
+    <div class="three-canvas-wrap">
+      <canvas id="three-canvas" aria-label="Интерактивная 3D модель алмаза"></canvas>
+      <div class="three-controls-hint" aria-hidden="true">Загрузка модели…</div>
+    </div>
+
+    <!-- Model info panel -->
+    <aside class="three-info">
+      <div>
+        <p class="label">3D Визуализация</p>
+        <h2 id="three-heading">DIAMOND<br />MODEL</h2>
+      </div>
+
+      <p>
+        Интерактивная 3D визуализация кастомного <code style="font-family:var(--ff-mono);font-size:12px;color:var(--accent)">diamond.obj</code> ассета,
+        загруженного через <strong>THREE.OBJLoader</strong>.
+        Перетащите для вращения, прокрутите для зума.
+      </p>
+
+      <!-- Model specs -->
+      <div class="model-specs">
+        <div class="spec-row">
+          <span class="spec-key">Формат</span>
+          <span class="spec-val">Wavefront OBJ</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Вершины</span>
+          <span class="spec-val">14</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Полигоны</span>
+          <span class="spec-val">24</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Геометрия</span>
+          <span class="spec-val">Diamond Gem Cut</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Рендерер</span>
+          <span class="spec-val">Three.js r128</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Управление</span>
+          <span class="spec-val">OrbitControls</span>
+        </div>
+      </div>
+
+      <a href="contacts.html" class="btn btn-accent btn-arrow" style="margin-top:8px">
+        Обсудить 3D проект
+      </a>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICES GRID
+═══════════════════════════════════════ -->
+<section class="services-section" aria-labelledby="services-heading">
+  <div class="services-section-inner">
+
+    <div class="services-top">
+      <div>
+        <p class="label reveal">Направления</p>
+        <h2 class="section-title reveal reveal-d1" id="services-heading">
+          OUR<br />SERVICES
+        </h2>
+      </div>
+      <p class="services-desc reveal reveal-d2">
+        Полный цикл от концепции до запуска.
+        Работаем прозрачно: фиксированные сроки, понятные цены, живая коммуникация.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Service 1 -->
+      <article class="service-card reveal">
+        <div class="service-number">01</div>
+        <h3 class="service-name">Landing Page</h3>
+        <p class="service-desc">
+          Высококонверсионные лендинги для продаж и лидогенерации.
+          Mobile-first, pixel-perfect верстка, интеграция аналитики.
+        </p>
+        <div class="service-tags">
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">от ₽35К</span>
+        </div>
+      </article>
+
+      <!-- Service 2 -->
+      <article class="service-card reveal reveal-d1">
+        <div class="service-number">02</div>
+        <h3 class="service-name">Multi-page Site</h3>
+        <p class="service-desc">
+          Корпоративные сайты и онлайн-витрины с полной CMS.
+          SEO-оптимизация, скорость, адаптивность на всех устройствах.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">от ₽75К</span>
+        </div>
+      </article>
+
+      <!-- Service 3 -->
+      <article class="service-card reveal reveal-d2">
+        <div class="service-number">03</div>
+        <h3 class="service-name">UI/UX Design</h3>
+        <p class="service-desc">
+          Дизайн-системы, прототипы, Figma-макеты.
+          Фокус на пользовательском опыте и конверсии, не только эстетике.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Figma</span>
+          <span class="tag">Design System</span>
+          <span class="tag">от ₽50К</span>
+        </div>
+      </article>
+
+      <!-- Service 4 -->
+      <article class="service-card reveal">
+        <div class="service-number">04</div>
+        <h3 class="service-name">AI Agent</h3>
+        <p class="service-desc">
+          Умные AI-агенты для автоматизации поддержки, продаж и операций.
+          Интеграция в Telegram, Web, CRM. Revenue-share модель.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Anthropic API</span>
+          <span class="tag">Multi-agent</span>
+          <span class="tag accent">Новинка</span>
+        </div>
+      </article>
+
+      <!-- Service 5 -->
+      <article class="service-card reveal reveal-d1">
+        <div class="service-number">05</div>
+        <h3 class="service-name">3D &amp; WebGL</h3>
+        <p class="service-desc">
+          Интерактивные 3D-сцены на Three.js. Загрузка кастомных моделей,
+          анимации, product configurators и immersive-интерфейсы.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Three.js</span>
+          <span class="tag">WebGL</span>
+          <span class="tag">OBJ / GLTF</span>
+        </div>
+      </article>
+
+      <!-- Service 6 -->
+      <article class="service-card reveal reveal-d2">
+        <div class="service-number">06</div>
+        <h3 class="service-name">Telegram Bot</h3>
+        <p class="service-desc">
+          Production-ready боты с webhook, Redis сессиями, inline-кнопками
+          и AI-ответчиком. Serverless на Vercel.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Telegram API</span>
+          <span class="tag">Vercel</span>
+          <span class="tag">Upstash Redis</span>
+        </div>
+      </article>
+
+    </div><!-- /.services-grid -->
+
+    <!-- CTA under grid -->
+    <div class="reveal" style="margin-top:64px; text-align:center; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="contacts.html" class="btn btn-accent btn-arrow">Обсудить проект</a>
+      <a href="index.html" class="btn btn-ghost">← На главную</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROCESS SECTION
+═══════════════════════════════════════ -->
+<section style="padding:80px 56px 120px; border-top:1px solid var(--border);" aria-labelledby="process-heading">
+  <div style="max-width:1280px; margin:0 auto;">
+    <p class="label reveal">Как работаем</p>
+    <h2 class="section-title reveal reveal-d1" id="process-heading">PROCESS</h2>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1px; background:var(--border); margin-top:48px;">
+
+      <div class="reveal" style="background:var(--bg); padding:36px 32px; border-bottom:2px solid transparent; transition:border-color 0.3s;" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='transparent'">
+        <p style="font-family:var(--ff-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">01 / Discovery</p>
+        <h3 style="font-family:var(--ff-display);font-size:22px;letter-spacing:0.04em;margin-bottom:12px">Бриф</h3>
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7">Созвон, анализ задачи, исследование аудитории и конкурентов.</p>
+      </div>
+
+      <div class="reveal reveal-d1" style="background:var(--bg); padding:36px 32px; border-bottom:2px solid transparent; transition:border-color 0.3s;" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='transparent'">
+        <p style="font-family:var(--ff-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">02 / Design</p>
+        <h3 style="font-family:var(--ff-display);font-size:22px;letter-spacing:0.04em;margin-bottom:12px">Дизайн</h3>
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7">Wireframes → визуал в Figma → согласование → pixel-perfect макет.</p>
+      </div>
+
+      <div class="reveal reveal-d2" style="background:var(--bg); padding:36px 32px; border-bottom:2px solid transparent; transition:border-color 0.3s;" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='transparent'">
+        <p style="font-family:var(--ff-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">03 / Build</p>
+        <h3 style="font-family:var(--ff-display);font-size:22px;letter-spacing:0.04em;margin-bottom:12px">Разработка</h3>
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7">Семантическая верстка, чистый код, тестирование на всех устройствах.</p>
+      </div>
+
+      <div class="reveal reveal-d3" style="background:var(--bg); padding:36px 32px; border-bottom:2px solid transparent; transition:border-color 0.3s;" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='transparent'">
+        <p style="font-family:var(--ff-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">04 / Launch</p>
+        <h3 style="font-family:var(--ff-display);font-size:22px;letter-spacing:0.04em;margin-bottom:12px">Запуск</h3>
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7">Деплой, аналитика, обучение клиента, поддержка 30 дней.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+```
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <p class="footer-brand">VALERI STUDIO</p>
+      <p class="footer-tagline">Digital studio — web, design & AI solutions. Alicante · Remote.</p>
+    </div>
+    <nav class="footer-col" aria-label="Навигация в footer">
+      <h4>Навигация</h4>
+      <a href="index.html">Главная</a>
+      <a href="portfolio.html">Услуги</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="footer-col">
+      <h4>Контакт</h4>
+      <a href="mailto:hello@valeri.studio">hello@valeri.studio</a>
+      <a href="tel:+34600000000">+34 600 000 000</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> VALERI STUDIO</span>
+      <span style="font-family:var(--ff-mono); font-size:10px; color:var(--text-muted)">
+        LOCAL TIME: <span data-clock></span>
+      </span>
+      <span>KT5 — Многостраничный сайт</span>
+    </div>
+  </footer>
+
+  <!-- Three.js from CDN -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+
+  <!-- Site scripts -->
+
+  <script src="js/nav.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script src="js/three-scene.js"></script>
+
+</body>
+</html>
