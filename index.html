@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VALERI STUDIO — Digital Agency</title>
+  <meta name="description" content="Digital studio specializing in web development, UI/UX design, and AI-powered solutions." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Noise texture overlay -->
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════ -->
+
+  <header class="site-header" role="banner">
+    <a href="index.html" class="logo" aria-label="VALERI STUDIO — home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      VALERI STUDIO
+    </a>
+
+```
+<nav role="navigation" aria-label="Основная навигация">
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="portfolio.html">Услуги</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+</nav>
+
+<button class="menu-toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Открыть меню">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+```
+
+  </header>
+
+  <main>
+
+```
+<!-- ═══════════════════════════════════════
+     HERO SLIDER
+═══════════════════════════════════════ -->
+<section class="hero" aria-label="Главный баннер">
+  <div class="slides-track" aria-live="polite">
+
+    <!-- Slide 1 -->
+    <article class="slide slide-1 active" aria-roledescription="slide" aria-label="Слайд 1 из 3">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content">
+        <p class="slide-num">01 / 03 — Digital Studio</p>
+        <h1 class="slide-heading">
+          WE BUILD<br /><span>DIGITAL</span><br />SYSTEMS
+        </h1>
+        <p class="slide-desc">
+          Создаём продукты, которые работают — не просто красиво выглядят.
+          Сайты, интерфейсы, AI-решения.
+        </p>
+        <div class="slide-actions">
+          <a href="portfolio.html" class="btn btn-accent btn-arrow">Наши услуги</a>
+          <a href="contacts.html" class="btn btn-ghost">Обсудить проект</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Slide 2 -->
+    <article class="slide slide-2" aria-roledescription="slide" aria-label="Слайд 2 из 3">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content">
+        <p class="slide-num">02 / 03 — Technology</p>
+        <h1 class="slide-heading">
+          CODE<br />MEETS<br /><span>DESIGN</span>
+        </h1>
+        <p class="slide-desc">
+          Используем современный стек: React, Next.js, Three.js, AI API.
+          Каждый проект — архитектурное решение, не шаблон.
+        </p>
+        <div class="slide-actions">
+          <a href="portfolio.html" class="btn btn-accent btn-arrow">Смотреть работы</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Slide 3 -->
+    <article class="slide slide-3" aria-roledescription="slide" aria-label="Слайд 3 из 3">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content">
+        <p class="slide-num">03 / 03 — Let's Talk</p>
+        <h1 class="slide-heading">
+          START<br />YOUR<br /><span>PROJECT</span>
+        </h1>
+        <p class="slide-desc">
+          Расскажите о задаче — ответим в течение 24 часов.
+          Первая консультация бесплатно.
+        </p>
+        <div class="slide-actions">
+          <a href="contacts.html" class="btn btn-accent btn-arrow">Связаться</a>
+        </div>
+      </div>
+    </article>
+
+  </div><!-- /.slides-track -->
+
+  <!-- Slider controls -->
+  <div class="slider-controls" aria-label="Управление слайдером">
+    <button class="slider-btn prev" aria-label="Предыдущий слайд">&#8592;</button>
+    <button class="slider-btn next" aria-label="Следующий слайд">&#8594;</button>
+  </div>
+
+  <!-- Dot indicators -->
+  <div class="slider-dots" role="tablist" aria-label="Слайды">
+    <button class="dot active" role="tab" aria-selected="true"  aria-label="Слайд 1"></button>
+    <button class="dot"        role="tab" aria-selected="false" aria-label="Слайд 2"></button>
+    <button class="dot"        role="tab" aria-selected="false" aria-label="Слайд 3"></button>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="slider-progress animating" aria-hidden="true" style="width:0%"></div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MARQUEE STRIP
+═══════════════════════════════════════ -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span>WEB DEVELOPMENT</span><span class="sep">×</span>
+    <span>UI/UX DESIGN</span><span class="sep">×</span>
+    <span>AI SOLUTIONS</span><span class="sep">×</span>
+    <span>3D GRAPHICS</span><span class="sep">×</span>
+    <span>BRANDING</span><span class="sep">×</span>
+    <span>WEB DEVELOPMENT</span><span class="sep">×</span>
+    <span>UI/UX DESIGN</span><span class="sep">×</span>
+    <span>AI SOLUTIONS</span><span class="sep">×</span>
+    <span>3D GRAPHICS</span><span class="sep">×</span>
+    <span>BRANDING</span><span class="sep">×</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     ABOUT + STATS
+═══════════════════════════════════════ -->
+<section class="about-section" aria-labelledby="about-heading">
+  <div class="about-inner">
+
+    <div class="about-text">
+      <p class="label reveal">О студии</p>
+      <h2 class="display-title reveal reveal-d1" id="about-heading">
+        SYSTEM<br />THINKING
+      </h2>
+      <p class="reveal reveal-d2">
+        Мы не делаем <strong>просто сайты</strong> — мы строим
+        <strong>системы привлечения клиентов</strong>.
+        Каждый проект начинается с анализа бизнеса и заканчивается
+        измеримым результатом.
+      </p>
+      <p class="reveal reveal-d3">
+        В команде — дизайнеры, разработчики и AI-специалисты.
+        Работаем на рынках СНГ и ЕС.
+      </p>
+      <div class="reveal reveal-d4" style="margin-top:36px">
+        <a href="portfolio.html" class="btn btn-accent btn-arrow">Посмотреть услуги</a>
+      </div>
+    </div>
+
+    <!-- Stats grid with animated counters -->
+    <div class="stats-grid reveal reveal-d2">
+      <div class="stat-box">
+        <div class="stat-number"
+             data-counter
+             data-target="47"
+             data-suffix="+">0+</div>
+        <div class="stat-label">Проектов сдано</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number"
+             data-counter
+             data-target="3"
+             data-suffix="">0</div>
+        <div class="stat-label">Года на рынке</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number"
+             data-counter
+             data-target="98"
+             data-suffix="%">0%</div>
+        <div class="stat-label">Клиентов довольны</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number"
+             data-counter
+             data-target="24"
+             data-suffix="ч">0ч</div>
+        <div class="stat-label">Ответим за</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICES PREVIEW
+═══════════════════════════════════════ -->
+<section class="services-preview" aria-labelledby="services-preview-heading">
+  <div class="services-preview-inner">
+
+    <header class="services-header">
+      <div>
+        <p class="label reveal">Что делаем</p>
+        <h2 class="section-title reveal reveal-d1" id="services-preview-heading">
+          CORE<br />SERVICES
+        </h2>
+      </div>
+      <a href="portfolio.html" class="btn btn-ghost reveal reveal-d2">Все услуги →</a>
+    </header>
+
+    <div class="preview-cards" data-stagger>
+
+      <article class="preview-card">
+        <p class="card-index">01</p>
+        <span class="card-icon" aria-hidden="true">⬡</span>
+        <h3 class="card-title">Web Design</h3>
+        <p class="card-desc">Лендинги и многостраничные сайты с фокусом на конверсию. Mobile-first, семантика, анимации.</p>
+      </article>
+
+      <article class="preview-card">
+        <p class="card-index">02</p>
+        <span class="card-icon" aria-hidden="true">◈</span>
+        <h3 class="card-title">Development</h3>
+        <p class="card-desc">React, Next.js, Supabase. Serverless архитектура. Telegram-боты и Vercel деплой.</p>
+      </article>
+
+      <article class="preview-card">
+        <p class="card-index">03</p>
+        <span class="card-icon" aria-hidden="true">◬</span>
+        <h3 class="card-title">AI Agents</h3>
+        <p class="card-desc">Мульти-агентные системы на базе Anthropic API. Автоматизация бизнес-процессов.</p>
+      </article>
+
+    </div><!-- /.preview-cards -->
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     DYNAMIC CONTENT: CTA BANNER
+═══════════════════════════════════════ -->
+<section style="padding:80px 56px; background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);" aria-labelledby="cta-heading">
+  <div style="max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:32px; flex-wrap:wrap;">
+    <div>
+      <p class="label reveal" aria-hidden="true">Готовы начать?</p>
+      <h2 class="section-title reveal reveal-d1" id="cta-heading">
+        LET'S BUILD<br />SOMETHING
+      </h2>
+      <!-- Dynamic greeting injected by main.js -->
+      <p class="reveal reveal-d2" style="font-size:15px; color:var(--text-dim); margin-top:8px;">
+        <span data-greeting></span> — расскажите нам о вашей задаче.
+      </p>
+    </div>
+    <a href="contacts.html" class="btn btn-accent btn-arrow reveal reveal-d3" style="font-size:13px; padding:18px 36px;">
+      Обсудить проект
+    </a>
+  </div>
+</section>
+```
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <p class="footer-brand">VALERI STUDIO</p>
+      <p class="footer-tagline">Digital studio — web, design & AI solutions. Alicante · Moscow · Remote.</p>
+    </div>
+
+```
+<nav class="footer-col" aria-label="Навигация в footer">
+  <h4>Навигация</h4>
+  <a href="index.html">Главная</a>
+  <a href="portfolio.html">Услуги</a>
+  <a href="contacts.html">Контакты</a>
+</nav>
+
+<div class="footer-col">
+  <h4>Контакт</h4>
+  <a href="mailto:hello@valeri.studio">hello@valeri.studio</a>
+  <a href="tel:+34600000000">+34 600 000 000</a>
+</div>
+
+<div class="footer-bottom">
+  <span>© <span data-year></span> VALERI STUDIO</span>
+  <span style="font-family:var(--ff-mono); font-size:10px; letter-spacing:0.12em; color:var(--text-muted)">
+    LOCAL TIME: <span data-clock></span>
+  </span>
+  <span>KT5 — Многостраничный сайт</span>
+</div>
+```
+
+  </footer>
+
+  <!-- Scripts -->
+
+  <script src="js/nav.js"></script>
+
+  <script src="js/slider.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
