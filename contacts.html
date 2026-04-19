@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -57,41 +56,38 @@
       border: 1px solid var(--border);
     }
 
-```
-.social-row {
-  display: flex;
-  gap: 10px;
-  margin-top: 32px;
-}
-.social-btn {
-  width: 44px; height: 44px;
-  border: 1px solid var(--border-2);
-  background: transparent;
-  color: var(--text-dim);
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--t);
-  text-decoration: none;
-  cursor: pointer;
-}
-.social-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: var(--accent-glow);
-}
+    .social-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 32px;
+    }
+    .social-btn {
+      width: 44px; height: 44px;
+      border: 1px solid var(--border-2);
+      background: transparent;
+      color: var(--text-dim);
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--t);
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .social-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-glow);
+    }
 
-/* Field select custom arrow */
-.field-select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23666'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  padding-right: 36px;
-}
-.field-select option { background: #111; }
-```
-
+    /* Field select custom arrow */
+    .field-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23666'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+    }
+    .field-select option { background: #111; }
   </style>
 </head>
 <body>
@@ -101,313 +97,306 @@
   <!-- ═══════════════════════════════════════
        HEADER
   ═══════════════════════════════════════ -->
-
   <header class="site-header" role="banner">
     <a href="index.html" class="logo" aria-label="VALERI STUDIO — home">
       <span class="logo-mark" aria-hidden="true"></span>
       VALERI STUDIO
     </a>
 
-```
-<nav role="navigation" aria-label="Основная навигация">
-  <ul class="nav-links" id="nav-links">
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="portfolio.html">Услуги</a></li>
-    <li><a href="contacts.html">Контакты</a></li>
-  </ul>
-</nav>
+    <nav role="navigation" aria-label="Основная навигация">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="portfolio.html">Услуги</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
 
-<button class="menu-toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Открыть меню">
-  <span></span><span></span><span></span>
-</button>
-```
-
+    <button class="menu-toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main>
 
-```
-<!-- ═══════════════════════════════════════
-     PAGE HERO
-═══════════════════════════════════════ -->
-<section class="page-hero" aria-labelledby="contacts-heading">
-  <div class="page-hero-inner">
-    <div>
-      <p class="label">Связаться с нами</p>
-      <h1 class="page-title" id="contacts-heading">
-        GET IN<br />TOUCH
-      </h1>
-    </div>
-    <p class="page-hero-meta">
-      Ответим за 24ч<br />
-      Бесплатная консультация
-    </p>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     CONTACT SECTION
-═══════════════════════════════════════ -->
-<section class="contact-section" aria-labelledby="contact-form-title">
-
-  <div class="contact-inner">
-
-    <!-- Left: Contact info -->
-    <aside class="contact-info" aria-label="Контактная информация">
-
-      <h2 class="reveal">LET'S<br />TALK</h2>
-      <p class="reveal reveal-d1">
-        Расскажите о вашем проекте — мы изучим задачу
-        и предложим оптимальное решение.
-        Первый созвон бесплатный.
-      </p>
-
-      <!-- Contact items -->
-      <div class="contact-items reveal reveal-d2">
-
-        <div class="contact-item">
-          <div class="ci-icon" aria-hidden="true">✉</div>
-          <div>
-            <p class="ci-label">Email</p>
-            <a href="mailto:hello@valeri.studio" class="ci-value" style="transition:color 0.2s" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color=''">
-              hello@valeri.studio
-            </a>
-          </div>
+    <!-- ═══════════════════════════════════════
+         PAGE HERO
+    ═══════════════════════════════════════ -->
+    <section class="page-hero" aria-labelledby="contacts-heading">
+      <div class="page-hero-inner">
+        <div>
+          <p class="label">Связаться с нами</p>
+          <h1 class="page-title" id="contacts-heading">
+            GET IN<br />TOUCH
+          </h1>
         </div>
-
-        <div class="contact-item">
-          <div class="ci-icon" aria-hidden="true">☎</div>
-          <div>
-            <p class="ci-label">Телефон</p>
-            <a href="tel:+34600000000" class="ci-value" style="transition:color 0.2s" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color=''">
-              +34 600 000 000
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="ci-icon" aria-hidden="true">◎</div>
-          <div>
-            <p class="ci-label">Местоположение</p>
-            <p class="ci-value">Alicante, Spain · Remote</p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="ci-icon" aria-hidden="true">◷</div>
-          <div>
-            <p class="ci-label">Время работы</p>
-            <p class="ci-value">Пн–Пт, 10:00–20:00 CET</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Social links -->
-      <div class="social-row reveal reveal-d3" aria-label="Социальные сети">
-        <a href="#" class="social-btn" aria-label="Telegram" title="Telegram">✈</a>
-        <a href="#" class="social-btn" aria-label="GitHub" title="GitHub">◈</a>
-        <a href="#" class="social-btn" aria-label="Behance" title="Behance">Be</a>
-        <a href="#" class="social-btn" aria-label="LinkedIn" title="LinkedIn">in</a>
-      </div>
-
-      <!-- Map placeholder -->
-      <div class="map-placeholder reveal reveal-d4" role="img" aria-label="Местоположение: Alicante, Spain">
-        <div class="map-dot"></div>
-        <p class="map-label">Alicante, Spain · CET (UTC+1)</p>
-      </div>
-
-    </aside>
-
-    <!-- Right: Contact form -->
-    <div class="contact-form-wrap reveal reveal-d2">
-
-      <h2 class="form-title" id="contact-form-title">Написать нам</h2>
-
-      <!-- Form -->
-      <form id="contact-form" novalidate autocomplete="on">
-
-        <div class="form-row">
-
-          <!-- Name -->
-          <div class="field-group">
-            <label class="field-label" for="field-name">
-              Имя <span class="req" aria-hidden="true">*</span>
-            </label>
-            <input
-              id="field-name"
-              class="field-input"
-              type="text"
-              name="name"
-              placeholder="Иван Иванов"
-              autocomplete="name"
-              required
-              aria-required="true"
-              aria-describedby="error-name"
-            />
-            <span class="field-error" id="error-name" data-error="name" role="alert"></span>
-          </div>
-
-          <!-- Email -->
-          <div class="field-group">
-            <label class="field-label" for="field-email">
-              Email <span class="req" aria-hidden="true">*</span>
-            </label>
-            <input
-              id="field-email"
-              class="field-input"
-              type="email"
-              name="email"
-              placeholder="ivan@example.com"
-              autocomplete="email"
-              required
-              aria-required="true"
-              aria-describedby="error-email"
-            />
-            <span class="field-error" id="error-email" data-error="email" role="alert"></span>
-          </div>
-
-        </div><!-- /.form-row -->
-
-        <!-- Subject (select) -->
-        <div class="field-group full">
-          <label class="field-label" for="field-subject">Тема обращения</label>
-          <select
-            id="field-subject"
-            class="field-input field-select"
-            name="subject"
-            aria-describedby="error-subject"
-          >
-            <option value="" disabled selected>Выберите тему…</option>
-            <option value="web">Веб-разработка / лендинг</option>
-            <option value="design">UI/UX дизайн</option>
-            <option value="ai">AI-агент / автоматизация</option>
-            <option value="3d">3D / WebGL визуализация</option>
-            <option value="other">Другое</option>
-          </select>
-          <span class="field-error" id="error-subject" data-error="subject" role="alert"></span>
-        </div>
-
-        <!-- Message -->
-        <div class="field-group full">
-          <label class="field-label" for="field-message">
-            Сообщение <span class="req" aria-hidden="true">*</span>
-            <span data-counter-label style="color:var(--text-muted)">0 / 1000</span>
-          </label>
-          <textarea
-            id="field-message"
-            class="field-textarea"
-            name="message"
-            placeholder="Опишите вашу задачу: что нужно сделать, в какие сроки, каков бюджет…"
-            required
-            aria-required="true"
-            aria-describedby="error-message"
-          ></textarea>
-          <span class="field-error" id="error-message" data-error="message" role="alert"></span>
-        </div>
-
-        <!-- Privacy checkbox -->
-        <label class="form-check" for="privacy-check">
-          <input type="checkbox" id="privacy-check" name="privacy" />
-          <span class="form-check-text">
-            Я согласен с обработкой персональных данных и
-            <a href="#" style="color:var(--accent);text-decoration:underline">политикой конфиденциальности</a>
-          </span>
-        </label>
-
-        <!-- Submit -->
-        <button type="submit" class="form-submit" aria-live="polite">
-          <span class="btn-text">Отправить сообщение →</span>
-          <span class="spinner" aria-hidden="true"></span>
-        </button>
-
-      </form>
-
-      <!-- Success state (hidden until form submitted) -->
-      <div class="form-success" role="alert" aria-live="polite">
-        <div class="success-icon" aria-hidden="true">✓</div>
-        <h3 class="success-title">Сообщение отправлено!</h3>
-        <p class="success-desc">
-          Спасибо! Мы получили вашу заявку и свяжемся в течение 24 часов.
+        <p class="page-hero-meta">
+          Ответим за 24ч<br />
+          Бесплатная консультация
         </p>
-        <button
-          onclick="location.reload()"
-          class="btn btn-ghost"
-          style="margin-top:8px"
-          aria-label="Отправить ещё одно сообщение"
-        >
-          Отправить ещё
-        </button>
       </div>
+    </section>
 
-    </div><!-- /.contact-form-wrap -->
+    <!-- ═══════════════════════════════════════
+         CONTACT SECTION
+    ═══════════════════════════════════════ -->
+    <section class="contact-section" aria-labelledby="contact-form-title">
 
-  </div><!-- /.contact-inner -->
+      <div class="contact-inner">
 
-</section>
+        <!-- Left: Contact info -->
+        <aside class="contact-info" aria-label="Контактная информация">
 
-<!-- ═══════════════════════════════════════
-     FAQ (Динамическое изменение контента)
-═══════════════════════════════════════ -->
-<section style="padding:80px 56px 120px; border-top:1px solid var(--border);" aria-labelledby="faq-heading">
-  <div style="max-width:760px; margin:0 auto;">
-    <p class="label reveal">FAQ</p>
-    <h2 class="section-title reveal reveal-d1" id="faq-heading">ЧАСТЫЕ<br />ВОПРОСЫ</h2>
+          <h2 class="reveal">LET'S<br />TALK</h2>
+          <p class="reveal reveal-d1">
+            Расскажите о вашем проекте — мы изучим задачу
+            и предложим оптимальное решение.
+            Первый созвон бесплатный.
+          </p>
 
-    <div style="margin-top:48px;" id="faq-list">
+          <!-- Contact items -->
+          <div class="contact-items reveal reveal-d2">
 
-      <!-- FAQ items - открываются по клику (динамическое изменение контента) -->
-      <div class="faq-item reveal" style="border-bottom:1px solid var(--border);">
-        <button class="faq-q" aria-expanded="false" style="width:100%;text-align:left;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--ff-body);font-size:16px;color:var(--text);cursor:pointer;gap:16px;">
-          Сколько стоит разработка сайта?
-          <span class="faq-icon" aria-hidden="true" style="color:var(--accent);font-size:20px;transition:transform 0.3s;flex-shrink:0">+</span>
-        </button>
-        <div class="faq-a" style="overflow:hidden;max-height:0;transition:max-height 0.4s ease;font-size:14px;color:var(--text-dim);line-height:1.8;padding-bottom:0;">
-          <p style="padding-bottom:20px;">Лендинг — от ₽35 000 / €1 000. Многостраничный сайт — от ₽75 000 / €2 000. Цена зависит от функциональности, дизайна и сроков. Бесплатно обсудим детали перед оценкой.</p>
-        </div>
+            <div class="contact-item">
+              <div class="ci-icon" aria-hidden="true">✉</div>
+              <div>
+                <p class="ci-label">Email</p>
+                <a href="mailto:hello@valeri.studio" class="ci-value" style="transition:color 0.2s" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color=''">
+                  hello@valeri.studio
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="ci-icon" aria-hidden="true">☎</div>
+              <div>
+                <p class="ci-label">Телефон</p>
+                <a href="tel:+34600000000" class="ci-value" style="transition:color 0.2s" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color=''">
+                  +34 600 000 000
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="ci-icon" aria-hidden="true">◎</div>
+              <div>
+                <p class="ci-label">Местоположение</p>
+                <p class="ci-value">Alicante, Spain · Remote</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="ci-icon" aria-hidden="true">◷</div>
+              <div>
+                <p class="ci-label">Время работы</p>
+                <p class="ci-value">Пн–Пт, 10:00–20:00 CET</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social links -->
+          <div class="social-row reveal reveal-d3" aria-label="Социальные сети">
+            <a href="#" class="social-btn" aria-label="Telegram" title="Telegram">✈</a>
+            <a href="#" class="social-btn" aria-label="GitHub" title="GitHub">◈</a>
+            <a href="#" class="social-btn" aria-label="Behance" title="Behance">Be</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn" title="LinkedIn">in</a>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-placeholder reveal reveal-d4" role="img" aria-label="Местоположение: Alicante, Spain">
+            <div class="map-dot"></div>
+            <p class="map-label">Alicante, Spain · CET (UTC+1)</p>
+          </div>
+
+        </aside>
+
+        <!-- Right: Contact form -->
+        <div class="contact-form-wrap reveal reveal-d2">
+
+          <h2 class="form-title" id="contact-form-title">Написать нам</h2>
+
+          <!-- Form -->
+          <form id="contact-form" novalidate autocomplete="on">
+
+            <div class="form-row">
+
+              <!-- Name -->
+              <div class="field-group">
+                <label class="field-label" for="field-name">
+                  Имя <span class="req" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="field-name"
+                  class="field-input"
+                  type="text"
+                  name="name"
+                  placeholder="Иван Иванов"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                  aria-describedby="error-name"
+                />
+                <span class="field-error" id="error-name" data-error="name" role="alert"></span>
+              </div>
+
+              <!-- Email -->
+              <div class="field-group">
+                <label class="field-label" for="field-email">
+                  Email <span class="req" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="field-email"
+                  class="field-input"
+                  type="email"
+                  name="email"
+                  placeholder="ivan@example.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="error-email"
+                />
+                <span class="field-error" id="error-email" data-error="email" role="alert"></span>
+              </div>
+
+            </div><!-- /.form-row -->
+
+            <!-- Subject (select) -->
+            <div class="field-group full">
+              <label class="field-label" for="field-subject">Тема обращения</label>
+              <select
+                id="field-subject"
+                class="field-input field-select"
+                name="subject"
+                aria-describedby="error-subject"
+              >
+                <option value="" disabled selected>Выберите тему…</option>
+                <option value="web">Веб-разработка / лендинг</option>
+                <option value="design">UI/UX дизайн</option>
+                <option value="ai">AI-агент / автоматизация</option>
+                <option value="3d">3D / WebGL визуализация</option>
+                <option value="other">Другое</option>
+              </select>
+              <span class="field-error" id="error-subject" data-error="subject" role="alert"></span>
+            </div>
+
+            <!-- Message -->
+            <div class="field-group full">
+              <label class="field-label" for="field-message">
+                Сообщение <span class="req" aria-hidden="true">*</span>
+                <span data-counter-label style="color:var(--text-muted)">0 / 1000</span>
+              </label>
+              <textarea
+                id="field-message"
+                class="field-textarea"
+                name="message"
+                placeholder="Опишите вашу задачу: что нужно сделать, в какие сроки, каков бюджет…"
+                required
+                aria-required="true"
+                aria-describedby="error-message"
+              ></textarea>
+              <span class="field-error" id="error-message" data-error="message" role="alert"></span>
+            </div>
+
+            <!-- Privacy checkbox -->
+            <label class="form-check" for="privacy-check">
+              <input type="checkbox" id="privacy-check" name="privacy" />
+              <span class="form-check-text">
+                Я согласен с обработкой персональных данных и
+                <a href="#" style="color:var(--accent);text-decoration:underline">политикой конфиденциальности</a>
+              </span>
+            </label>
+
+            <!-- Submit -->
+            <button type="submit" class="form-submit" aria-live="polite">
+              <span class="btn-text">Отправить сообщение →</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+
+          </form>
+
+          <!-- Success state (hidden until form submitted) -->
+          <div class="form-success" role="alert" aria-live="polite">
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h3 class="success-title">Сообщение отправлено!</h3>
+            <p class="success-desc">
+              Спасибо! Мы получили вашу заявку и свяжемся в течение 24 часов.
+            </p>
+            <button
+              onclick="location.reload()"
+              class="btn btn-ghost"
+              style="margin-top:8px"
+              aria-label="Отправить ещё одно сообщение"
+            >
+              Отправить ещё
+            </button>
+          </div>
+
+        </div><!-- /.contact-form-wrap -->
+
+      </div><!-- /.contact-inner -->
+
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FAQ (Динамическое изменение контента)
+    ═══════════════════════════════════════ -->
+    <section style="padding:80px 56px 120px; border-top:1px solid var(--border);" aria-labelledby="faq-heading">
+      <div style="max-width:760px; margin:0 auto;">
+        <p class="label reveal">FAQ</p>
+        <h2 class="section-title reveal reveal-d1" id="faq-heading">ЧАСТЫЕ<br />ВОПРОСЫ</h2>
+
+        <div style="margin-top:48px;" id="faq-list">
+
+          <!-- FAQ items - открываются по клику (динамическое изменение контента) -->
+          <div class="faq-item reveal" style="border-bottom:1px solid var(--border);">
+            <button class="faq-q" aria-expanded="false" style="width:100%;text-align:left;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--ff-body);font-size:16px;color:var(--text);cursor:pointer;gap:16px;">
+              Сколько стоит разработка сайта?
+              <span class="faq-icon" aria-hidden="true" style="color:var(--accent);font-size:20px;transition:transform 0.3s;flex-shrink:0">+</span>
+            </button>
+            <div class="faq-a" style="overflow:hidden;max-height:0;transition:max-height 0.4s ease;font-size:14px;color:var(--text-dim);line-height:1.8;padding-bottom:0;">
+              <p style="padding-bottom:20px;">Лендинг — от ₽35 000 / €1 000. Многостраничный сайт — от ₽75 000 / €2 000. Цена зависит от функциональности, дизайна и сроков. Бесплатно обсудим детали перед оценкой.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-d1" style="border-bottom:1px solid var(--border);">
+            <button class="faq-q" aria-expanded="false" style="width:100%;text-align:left;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--ff-body);font-size:16px;color:var(--text);cursor:pointer;gap:16px;">
+              Какие сроки разработки?
+              <span class="faq-icon" aria-hidden="true" style="color:var(--accent);font-size:20px;transition:transform 0.3s;flex-shrink:0">+</span>
+            </button>
+            <div class="faq-a" style="overflow:hidden;max-height:0;transition:max-height 0.4s ease;font-size:14px;color:var(--text-dim);line-height:1.8;">
+              <p style="padding-bottom:20px;">Лендинг — 7–14 дней. Многостраничный сайт — 3–6 недель. AI-агент — от 2 недель. Сроки фиксируем в договоре с чёткими дедлайнами по каждому этапу.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-d2" style="border-bottom:1px solid var(--border);">
+            <button class="faq-q" aria-expanded="false" style="width:100%;text-align:left;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--ff-body);font-size:16px;color:var(--text);cursor:pointer;gap:16px;">
+              Работаете ли вы с зарубежными клиентами?
+              <span class="faq-icon" aria-hidden="true" style="color:var(--accent);font-size:20px;transition:transform 0.3s;flex-shrink:0">+</span>
+            </button>
+            <div class="faq-a" style="overflow:hidden;max-height:0;transition:max-height 0.4s ease;font-size:14px;color:var(--text-dim);line-height:1.8;">
+              <p style="padding-bottom:20px;">Да. Работаем с клиентами из СНГ, ЕС и других регионов. Принимаем оплату в рублях, евро и USDT. Работаем полностью удалённо.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-d3" style="border-bottom:1px solid var(--border);">
+            <button class="faq-q" aria-expanded="false" style="width:100%;text-align:left;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--ff-body);font-size:16px;color:var(--text);cursor:pointer;gap:16px;">
+              Что входит в поддержку после запуска?
+              <span class="faq-icon" aria-hidden="true" style="color:var(--accent);font-size:20px;transition:transform 0.3s;flex-shrink:0">+</span>
+            </button>
+            <div class="faq-a" style="overflow:hidden;max-height:0;transition:max-height 0.4s ease;font-size:14px;color:var(--text-dim);line-height:1.8;">
+              <p style="padding-bottom:20px;">30 дней бесплатной поддержки: исправление багов, мелкие правки, консультации. Далее — по ежемесячному договору обслуживания.</p>
+            </div>
+          </div>
+
+        </div><!-- /#faq-list -->
       </div>
-
-      <div class="faq-item reveal reveal-d1" style="border-bottom:1px solid var(--border);">
-        <button class="faq-q" aria-expanded="false" style="width:100%;text-align:left;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--ff-body);font-size:16px;color:var(--text);cursor:pointer;gap:16px;">
-          Какие сроки разработки?
-          <span class="faq-icon" aria-hidden="true" style="color:var(--accent);font-size:20px;transition:transform 0.3s;flex-shrink:0">+</span>
-        </button>
-        <div class="faq-a" style="overflow:hidden;max-height:0;transition:max-height 0.4s ease;font-size:14px;color:var(--text-dim);line-height:1.8;">
-          <p style="padding-bottom:20px;">Лендинг — 7–14 дней. Многостраничный сайт — 3–6 недель. AI-агент — от 2 недель. Сроки фиксируем в договоре с чёткими дедлайнами по каждому этапу.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-d2" style="border-bottom:1px solid var(--border);">
-        <button class="faq-q" aria-expanded="false" style="width:100%;text-align:left;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--ff-body);font-size:16px;color:var(--text);cursor:pointer;gap:16px;">
-          Работаете ли вы с зарубежными клиентами?
-          <span class="faq-icon" aria-hidden="true" style="color:var(--accent);font-size:20px;transition:transform 0.3s;flex-shrink:0">+</span>
-        </button>
-        <div class="faq-a" style="overflow:hidden;max-height:0;transition:max-height 0.4s ease;font-size:14px;color:var(--text-dim);line-height:1.8;">
-          <p style="padding-bottom:20px;">Да. Работаем с клиентами из СНГ, ЕС и других регионов. Принимаем оплату в рублях, евро и USDT. Работаем полностью удалённо.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-d3" style="border-bottom:1px solid var(--border);">
-        <button class="faq-q" aria-expanded="false" style="width:100%;text-align:left;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--ff-body);font-size:16px;color:var(--text);cursor:pointer;gap:16px;">
-          Что входит в поддержку после запуска?
-          <span class="faq-icon" aria-hidden="true" style="color:var(--accent);font-size:20px;transition:transform 0.3s;flex-shrink:0">+</span>
-        </button>
-        <div class="faq-a" style="overflow:hidden;max-height:0;transition:max-height 0.4s ease;font-size:14px;color:var(--text-dim);line-height:1.8;">
-          <p style="padding-bottom:20px;">30 дней бесплатной поддержки: исправление багов, мелкие правки, консультации. Далее — по ежемесячному договору обслуживания.</p>
-        </div>
-      </div>
-
-    </div><!-- /#faq-list -->
-  </div>
-</section>
-```
+    </section>
 
   </main>
 
   <!-- ═══════════════════════════════════════
        FOOTER
   ═══════════════════════════════════════ -->
-
   <footer class="site-footer" role="contentinfo">
     <div>
       <p class="footer-brand">VALERI STUDIO</p>
@@ -434,15 +423,11 @@
   </footer>
 
   <!-- Site scripts -->
-
   <script src="js/nav.js"></script>
-
   <script src="js/main.js"></script>
-
   <script src="js/form.js"></script>
 
   <!-- FAQ accordion — динамическое изменение контента -->
-
   <script>
     (function () {
       document.querySelectorAll('.faq-item').forEach(item => {
